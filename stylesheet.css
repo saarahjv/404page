@@ -1,8 +1,30 @@
 #menu {
     height:75px ;
     background-color: white;
+    display: block;
+    text-align: right;
 }
 
-#contenu {
-    background-color : #0000FF;
+li {
+    display: inline;
+}
+
+a {
+    color: black
+}
+
+#content {
+    background-color : #FACC2E;
+    height: 708px;
+}
+
+#content {
+    position:relative;
+}
+
+#enfant {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
