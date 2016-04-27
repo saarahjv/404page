@@ -1,14 +1,20 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+
 #navbar {
     height:75px ;
     background-color: white;
-    display: block;
+    display: table-cell;
     text-align: right;
     font-weight: Normal ;
     font-family: "Apercu Bold" , sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
-    margin-top: 21px;
+    padding-top: 21px;
 }
+
 
 #nav-login {
     height: 32px;
@@ -44,13 +50,30 @@
     background-color: rgb(38, 38, 38);
 }
 
+#foot p {
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 21.42px;
+    text-align: center;
+}
+
+
 #backtotable {
     margin:auto;
 }
 
-#tableau { 
+#tableau {
+   width: 100%;
+}
+
+#tableau ul {
+    width: 33%;
+    padding:0;
+    display: inline-block;
+    text-align: center;
     vertical-align: top;
-} 
+}
 
 .hamburger {
     padding: 10px;
@@ -63,8 +86,8 @@
     font-family: Helvetica;
     font-size: 15px;
     font-weight: lighter;
-    position:relative;
-    vertical-align: top;
+    list-style-type: none;
+    display: block;
 }
 
 .Team {
@@ -72,8 +95,7 @@
     font-family: Helvetica;
     font-size: 15px;
     font-weight: lighter;
-    position:relative;
-    vertical-align: top;
+    list-style-type: none;
 }
 
 .icones {
@@ -81,15 +103,9 @@
     color: white;
     font-size: 15px;
     font-weight: lighter;
+    list-style-type: none;
 }
 
-ul {
-    display: block;
-}
-li {
-    display: inline;
-    margin-right: 14px;
-}
 
 a {
     color: black;
@@ -120,3 +136,10 @@ div div {
     color: white;
 }
 
+body div ul {
+    list-style-type: none;
+}
+
+div div ul li img {
+    height: 40px;
+}
